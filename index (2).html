@@ -1,0 +1,188 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Responsive Design with Tailwind CSS
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100 text-gray-800">
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-md">
+   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+    <a class="text-xl font-bold text-gray-800 hover:text-blue-600 transition duration-300" href="#">
+     MyWebsite
+    </a>
+    <div class="hidden md:flex space-x-4">
+     <a class="text-gray-800 hover:text-blue-600 transition duration-300" href="#">
+      Home
+     </a>
+     <a class="text-gray-800 hover:text-blue-600 transition duration-300" href="#">
+      About
+     </a>
+     <a class="text-gray-800 hover:text-blue-600 transition duration-300" href="#">
+      Services
+     </a>
+     <a class="text-gray-800 hover:text-blue-600 transition duration-300" href="#">
+      Contact
+     </a>
+    </div>
+    <div class="md:hidden">
+     <button class="text-gray-800 focus:outline-none" id="menu-btn">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+    </div>
+   </div>
+   <div class="hidden md:hidden" id="mobile-menu">
+    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-200 transition duration-300" href="#">
+     Home
+    </a>
+    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-200 transition duration-300" href="#">
+     About
+    </a>
+    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-200 transition duration-300" href="#">
+     Services
+    </a>
+    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-200 transition duration-300" href="#">
+     Contact
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="bg-white py-20">
+   <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold text-gray-800">
+     Welcome to MyWebsite
+    </h1>
+    <p class="mt-4 text-gray-600">
+     We provide the best services to help you grow your business.
+    </p>
+    <button class="mt-8 px-6 py-3 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-500 transition duration-300 transform hover:scale-105">
+     Get Started
+    </button>
+   </div>
+  </section>
+  <!-- News Section -->
+  <section class="py-20">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 text-center">
+     Latest News
+    </h2>
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+      <img alt="News item 1 image description" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/GGVo4OBA7M4XFUY7sZyc545sbsjOx3DWnQxalIeS6Z8.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        News Item 1
+       </h3>
+       <p class="mt-2 text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+      <img alt="News item 2 image description" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/eeTYVmFN3MsLJ0XKdQTqsfC8kfxQP_Z0F2tvoilrpn4.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        News Item 2
+       </h3>
+       <p class="mt-2 text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+      <img alt="News item 3 image description" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/pqJP40mnO2X_8fqOQF64RJDYbUlqCZ0-IgbmIts6NyE.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        News Item 3
+       </h3>
+       <p class="mt-2 text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+      <img alt="News item 4 image description" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/TtwBjxo76eGUHMpZKICf70pPrsmml6UVrK_yvIs3_EE.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        News Item 4
+       </h3>
+       <p class="mt-2 text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+      <img alt="News item 5 image description" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/CjbCL_f2uGix-BGuSfSM5xO-teeAgW2LMMjf4EF5BEk.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        News Item 5
+       </h3>
+       <p class="mt-2 text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+      <img alt="News item 6 image description" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/AQtMkBHBG_0NxTBq5SwLBJq2RVGsOcSxnylNEyHYvh4.jpg" width="600"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        News Item 6
+       </h3>
+       <p class="mt-2 text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+   <div class="container mx-auto px-4 text-center">
+    <p>
+     © 2023 MyWebsite. All rights reserved.
+    </p>
+    <div class="mt-4">
+     <a class="text-white hover:text-gray-400 mx-2 transition duration-300" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400 mx-2 transition duration-300" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400 mx-2 transition duration-300" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400 mx-2 transition duration-300" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+  </script>
+ </body>
+</html>
